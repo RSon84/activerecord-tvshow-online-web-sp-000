@@ -1,10 +1,6 @@
 class Show < ActiveRecord::Base
 
-<<<<<<< HEAD
   def self.highest_rating
-=======
-  def highest_rating
->>>>>>> 8248a796da3c0be69e62f0c17a4c1610e9ffbda0
     Show.maximum(:rating)
 end
 
@@ -29,5 +25,5 @@ end
 end
 
   def self.shows_by_alphabetical_order
-    Show.
+    Show.order(title:)
 end
