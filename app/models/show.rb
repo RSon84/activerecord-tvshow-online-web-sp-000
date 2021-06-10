@@ -25,5 +25,5 @@ end
 end
 
   def self.shows_by_alphabetical_order
-    Show.order(title:)
+    Show.order(:name)
 end
